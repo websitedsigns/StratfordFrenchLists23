@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="websiteDSigns">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>Christmas Lists</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+
+<!-- PRE LOADER -->
+
+<div class="preloader">
+     <div class="spinner">
+          <span class="spinner-rotate"></span>
+     </div>
+</div>
+
+
+
+
+
+<!-- Home Section -->
+
+<section id="home" class="parallax-section">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-6 col-sm-6" style="background-color: #EA4630">
+                    <div class="home-thumb">
+                        <div class="section-title">
+                                        <a href="#filter-section" class="wow fadeInUp smoothScroll" data-wow-delay="0.3s" style="color: white; font-size: 30px;">Daniel's List 2023</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    // Smooth scroll animation function
+                    document.querySelectorAll('a.smoothScroll').forEach(anchor => {
+                        anchor.addEventListener('click', function(e) {
+                            e.preventDefault();
+                
+                            const targetId = this.getAttribute('href').substring(1); // Remove the # symbol
+                            const targetElement = document.getElementById(targetId);
+                
+                            if (targetElement) {
+                                window.scrollTo({
+                                    top: targetElement.offsetTop,
+                                    behavior: 'smooth',
+                                });
+                            }
+                        });
+                    });
+                </script>
+                <script>
+                    document.getElementById("list-dropdown").addEventListener("click", function() {
+                        var select = this;
+                        var chooseOption = select.querySelector('option[value=""][disabled]');
+                
+                        if (chooseOption) {
+                            select.removeChild(chooseOption);
+                        }
+                    });
+                </script>
+                
+                
+
+
+          </div>
+     </div>
+</section>
+
+<div class="container" id="filter-section">
+    <div class="row">
+        <div class="col-md-12">
+            
+            <div class="filter-buttons">
+                <button class="filter-button" data-category="all">All</button>
+                <button class="filter-button" data-category="games">Games</button>
+                <button class="filter-button" data-category="clothes">Clothes</button>
+                <button class="filter-button" data-category="footwear">Footwear</button>
+                <button class="filter-button" data-category="books">Books</button>
+                <button class="filter-button" data-category="electronics">Electronics</button>
+                <button class="filter-button" data-category="collectibles">Collectibles</button>
+                <button class="filter-button" data-category="household">Household</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section>
+    <!-- Content for Daniel -->
+    <div class="product-list">
+
+<!--Clothes-->
+        <div class="product clothes">
+            <img src="images/daniel/star_jumper.jpg" alt="Product 1">
+            <h2>Black STAR Labs Oversize Sweatshirt XXL</h2>
+            <p>Price: £16.99</p>
+            <a href="https://www.amazon.co.uk/STAR-Laboratories-Sweatshirts-S-T-R/dp/B01I833NDQ/ref=sr_1_2?crid=2XV6C6XPPAX63&keywords=the+flash+star+jumper+black&qid=1698667178&sprefix=the+flash+star+jumper+black%2Caps%2C89&sr=8-2" class="buy-button">Buy Now</a>
+        </div>
+
+        <div class="product clothes">
+            <img src="images/daniel/shrute.jpg" alt="Product 3">
+            <h2>Gray or Navy Shrute Farms Beets Sweatshirt XL</h2>
+            <p>Price: £22.99</p>
+            <a href="https://www.amazon.co.uk/Sanfran-Clothing-Schrute-Breakfast-Michael/dp/B084P1HXWN/ref=sr_1_1?crid=3MRLLVMXSDBKL&keywords=schrute%2Bfarms%2Bjumper&qid=1698668238&sprefix=shrute%2B%2Caps%2C103&sr=8-1&th=1&psc=1" class="buy-button">Buy Now</a>
+        </div>
+       
+        <div class="product clothes">
+            <img src="images/daniel/giants.jpg" alt="Product 4">
+            <h2>NY Giants Sweatshirt XL</h2>
+            <p>Price: £29.99</p>
+            <a href="https://www.pullandbear.com/gb/nfl-giants-new-york-sweatshirt-l07593543" class="buy-button">Buy Now</a>
+        </div>
+
+        <div class="product clothes">
+            <img src="images/daniel/crew jumper.jpg" alt="Product 5">
+            <h2>Crew Clothing Mens 1/​2 Zip Solid Sweatshirt Navy XL</h2>
+            <p>Price: £26.99</p>
+            <a href="product2-link" class="buy-button">Buy Now</a>
+        </div>
+
+        <div class="product footwear">
+            <img src="images/daniel/slippers.jpg" alt="Product 6">
+            <h2>Ben Sherman Mens Casa Cartegena Moccasin Slipper Navy Size 10</h2>
+            <p>Price: £14.99</p>
+            <a href="https://www.mandmdirect.com/01/details/BS4217/Ben-Sherman-Mens-Casa-Cartegena-Moccasin-Slipper-Navy" class="buy-button">Buy Now</a>
+        </div>
+
+        <div class="product footwear">
+            <img src="images/daniel/walkingboot.jpg" alt="Product 6">
+            <h2>Trespass Mens Finley Mid Waterproof Hiking Boots Coffee/​Rust Size 10</h2>
+            <p>Price: £34.99</p>
+            <a href="https://www.mandmdirect.com/01/details/QW1449/Trespass-Mens-Finley-Mid-Waterproof-Hiking-Boots-Coffee-Rust" class="buy-button">Buy Now</a>
+        </div>
+
+<!--Collectibles-->
+
+        <div class="product collectibles">
+            <img src="images/daniel/Michelangelo_TMNT_TUBBZ.jpg" alt="Product 2">
+            <h2>Michelangelo TMNT TUBBZ</h2>
+            <p>Price: £19.99</p>
+            <a href="https://www.justgeek.com/collections/tubbz/products/official-teenage-mutant-ninja-turtles-michaelangelo-tubbz" class="buy-button">Buy Now</a>
+        </div>
+
+        <div class="product collectibles">
+            <img src="images/daniel/Nemesis" alt="Product 2">
+            <h2>Nemesis Nano Coaster</h2>
+            <p>Price: £26.00</p>
+            <a href="https://www.coasterdynamix.com/products/nemesis-pre-order" class="buy-button">Buy Now</a>
+        </div>
+
+
+        
+<!--Books-->
+
+        <div class="product books">
+            <img src="images/daniel/react_key_concepts.jpg" alt="Product 2">
+            <h2>React Key Concepts</h2>
+            <p>Price: £33.99</p>
+            <a href="https://www.amazon.co.uk/React-Key-Concepts-Consolidate-knowledge/dp/1803234504/ref=sr_1_4?crid=15SEBUATQL1V0&keywords=react&qid=1698669573&s=books&sprefix=react+%2Cstripbooks%2C84&sr=1-4" class="buy-button">Buy Now</a>
+        </div>
+
+        <div class="product books">
+            <img src="images/daniel/reactandReactNative.jpg" alt="Product 2">
+            <h2>React and React Native:web, desktop, and mobile, 4th Edition</h2>
+            <p>Price: £23.99</p>
+            <a href="https://www.amazon.co.uk/React-Key-Concepts-Consolidate-knowledge/dp/1803234504/ref=sr_1_4?crid=15SEBUATQL1V0&keywords=react&qid=1698669573&s=books&sprefix=react+%2Cstripbooks%2C84&sr=1-4" class="buy-button">Buy Now</a>
+        </div>
+
+        <div class="product books">
+            <img src="images/daniel/dexter.jpg" alt="Product 2">
+            <h2>Dexter By Design</h2>
+            <p>Price: £8.27</p>
+            <a href="https://www.amazon.co.uk/Dexter-Design-Jeff-Lindsay/dp/0752884611/ref=sr_1_1?crid=162CWSKLY08CQ&keywords=dexter+by+design&qid=1698669866&s=books&sprefix=dexter+by+design%2Cstripbooks%2C77&sr=1-1" class="buy-button">Buy Now</a>
+        </div>
+
+        <div class="product books">
+            <img src="images/daniel/persia.jpg" alt="Product 2">
+            <h2>Flavour: Over 100 fabulously flavourful recipes with a Middle-Eastern twist</h2>
+            <p>Price: £19.69</p>
+            <a href="https://www.amazon.co.uk/Flavour-fabulously-flavourful-recipes-Middle-Eastern-ebook/dp/B0C3GX7H5X?ref_=ast_author_mpb" class="buy-button">Buy Now</a>
+        </div>
+
+        <div class="product books">
+            <img src="images/daniel/ottolenghi.jpg" alt="Product 2">
+            <h2>Ottolenghi Test Kitchen: Extra Good Things</h2>
+            <p>Price: £14.00</p>
+            <a href="https://www.amazon.co.uk/Ottolenghi-Test-Kitchen-Extra-Things-ebook/dp/B09V2BLYVF/ref=zg_bs_g_362334031_sccl_18/260-1674622-5535538?psc=1" class="buy-button">Buy Now</a>
+        </div>
+
+        <div class="product books">
+            <img src="images/daniel/matthewperry.jpg" alt="Product 2">
+            <h2>Friends, Lovers and the Big Terrible Thing</h2>
+            <p>Price: £12.50</p>
+            <a href="https://www.amazon.co.uk/Friends-Lovers-Big-Terrible-Thing/dp/1472295935/ref=sr_1_1?crid=272D13BAVOOBD&keywords=matthew+perry+autobiography&qid=1698670406&s=books&sprefix=matthew+perry+autobiography%2Cstripbooks%2C79&sr=1-1" class="buy-button">Buy Now</a>
+        </div>
+
+        <div class="product books">
+            <img src="images/daniel/unruly.jpg" alt="Product 2">
+            <h2>Unruly: The Number One Bestseller ‘Horrible Histories for grownups</h2>
+            <p>Price: £12.50</p>
+            <a href="https://www.amazon.co.uk/Friends-Lovers-Big-Terrible-Thing/dp/1472295935/ref=sr_1_1?crid=272D13BAVOOBD&keywords=matthew+perry+autobiography&qid=1698670406&s=books&sprefix=matthew+perry+autobiography%2Cstripbooks%2C79&sr=1-1" class="buy-button">Buy Now</a>
+        </div>
+
+        <div class="product books">
+            <img src="images/daniel/murdle.jpg" alt="Product 2">
+            <h2>Murdle</h2>
+            <p>Price: £12.50</p>
+            <a href="https://www.amazon.co.uk/Murdle-Devilishly-Devious-Mystery-Puzzles/dp/1800818025/ref=zg_bs_g_books_sccl_27/260-1674622-5535538?psc=1" class="buy-button">Buy Now</a>
+        </div>
+
+        <!--Games-->
+        <div class="product games">
+            <img src="images/daniel/wasjig.jpg" alt="Product 2">
+            <h2>Wasgij, Theme Park Thrills, Jigsaw Puzzles for Adults, 1000 Piece</h2>
+            <p>Price: £13.81</p>
+            <a href="https://www.amazon.co.uk/Jumbo-Wasgij-Destiny-Puzzles-Adults/dp/B0924XXWTD/ref=sr_1_17?crid=1PK5NK501KU0L&keywords=wasgij&qid=1698670956&s=kids&sprefix=wasjig%2Ctoys%2C83&sr=1-17&th=1" class="buy-button">Buy Now</a>
+        </div>
+
+        <div class="product games">
+            <img src="images/daniel/assets.jpg" alt="Product 2">
+            <h2>Cover Your Assets Card Game</h2>
+            <p>Price: £15.99</p>
+            <a href="https://www.amazon.co.uk/dp/B0077Q0NP2/ref=emc_bcc_2_i" class="buy-button">Buy Now</a>
+        </div>
+
+        <div class="product games">
+            <img src="images/daniel/corks.jpg" alt="Product 2">
+            <h2>Corks</h2>
+            <p>Price: £19.99</p>
+            <a href="https://www.amazon.co.uk/Ginger-Fox-Corks-Game/dp/B074TH3915/ref=pd_rhf_d_dp_s_pop_multi_srecs_sabr_cn_sccl_1_4/260-1674622-5535538?pd_rd_w=TxBtu&content-id=amzn1.sym.140ed8c8-f7ad-4184-908d-64107d20c104&pf_rd_p=140ed8c8-f7ad-4184-908d-64107d20c104&pf_rd_r=51GJ99J78E3VG64KDMG7&pd_rd_wg=qDy2M&pd_rd_r=990543be-2666-4673-9177-c3c46effe66a&pd_rd_i=B074TH3915&psc=1" class="buy-button">Buy Now</a>
+        </div>
+
+        <div class="product games">
+            <img src="images/daniel/tickettoride.jpg" alt="Product 2">
+            <h2>Ticket to Ride</h2>
+            <p>Price: £40.99</p>
+            <a href="https://www.amazon.co.uk/Days-Wonder-7201-Ticket-Ride/dp/0975277324/ref=sr_1_2?crid=2IIBJZ7FJXI83&keywords=grandpa+becks&qid=1698671429&s=kids&sprefix=grandpa+becks%2Ctoys%2C77&sr=1-2" class="buy-button">Buy Now</a>
+        </div>
+
+        <div class="product games">
+            <img src="images/daniel/GnomingaRound.jpg" alt="Product 2">
+            <h2>Gnoming Around Card Game</h2>
+            <p>Price: £15.99</p>
+            <a href="https://www.amazon.co.uk/Grandpa-Becks-Gnoming-Enjoyed-Creators/dp/B08KKZJQHY/ref=sr_1_5?crid=2IBEWR97TXWOL&keywords=grandpa+becks&qid=1698671531&s=kids&sprefix=grandpa+becks%2Ctoys%2C192&sr=1-5" class="buy-button">Buy Now</a>
+        </div>
+
+        <div class="product games">
+            <img src="images/daniel/gameoflife.jpg" alt="Product 2">
+            <h2>Game Of Life</h2>
+            <p>Price: £15.00</p>
+            <a href="https://www.amazon.co.uk/Game-Family-Board-Players-Colourful/dp/B08PVHPRLM/ref=sr_1_17?crid=1GOMUBOBU33E3&keywords=classic+board+games&qid=1698671793&s=kids&sprefix=classic+board+game%2Ctoys%2C75&sr=1-17" class="buy-button">Buy Now</a>
+        </div>
+
+        <!--Electronics-->
+        <div class="product electronics">
+            <img src="images/daniel/speaker.jpg" alt="Product 2">
+            <h2>Shower Speaker</h2>
+            <p>Price: £15.00</p>
+            <a href="https://www.menkind.co.uk/light-up-shower-speaker" class="buy-button">Buy Now</a>
+        </div>
+
+        <div class="product electronics">
+            <img src="https://www.menkind.co.uk/red5-led-light-bar-sound-reactive" alt="Product 2">
+            <h2>Reactive Light Bar</h2>
+            <p>Price: £15.00</p>
+            <a href="https://www.menkind.co.uk/red5-led-light-bar-sound-reactive" class="buy-button">Buy Now</a>
+        </div>
+
+        <div class="product electronics">
+            <img src="images/daniel/mat.jpg" alt="Product 2">
+            <h2>Wireless Charging Mouse Pad </h2>
+            <p>Price: £15.00</p>
+            <a href="https://www.menkind.co.uk/wireless-charging-mouse-pad" class="buy-button">Buy Now</a>
+        </div>
+
+
+        
+
+        <!--Household-->
+        <div class="product household">
+            <img src="images/daniel/grinder.jpg" alt="Product 2">
+            <h2>Electronic Coffee Grinder</h2>
+            <p>Price: £16.99</p>
+            <a href="https://www.amazon.co.uk/Aigostar-aigostar/dp/B08L7PNLBT/ref=sr_1_12?crid=508TIH3D8KIZ&keywords=electric%2Bcoffee%2Bgrinder&qid=1698675051&refinements=p_85%3A20930949031&rnid=20930948031&rps=1&sprefix=electronic%2Bgoffee%2Bgrinder%2Caps%2C81&sr=8-12&th=1" class="buy-button">Buy Now</a>       
+        </div>
+
+        <div class="product household">
+            <img src="images/daniel/press2.jpg" alt="Product 2">
+            <h2>Aeropress Dual Press Accessory</h2>
+            <p>Price: £16.99</p>
+            <a href="https://www.amazon.co.uk/2POUR%C2%AE-Accessory-Aeropress%C2%AE-Pourover-Version/dp/B07DM4GFYF/ref=sr_1_9?crid=2MQJULNSAD5D0&keywords=aeropress+accessories&qid=1698675186&sprefix=aeropress+acce%2Caps%2C113&sr=8-9" class="buy-button">Buy Now</a>       
+        </div>
+
+        <div class="product household">
+            <img src="images/daniel/aftersahve.webp" alt="Product 2">
+            <h2>MONTE & WILDE Eau De Toilette Collection</h2>
+            <p>Price: £18.00</p>
+            <a href="https://www.marksandspencer.com/eau-de-toilette-collection/p/hbp60618183#intid=pid_pg1pip48g4r2c3" class="buy-button">Buy Now</a>       
+        </div>
+
+        <div class="product household">
+            <img src="images/daniel/seedsack.jpg" alt="Product 2">
+            <h2>Seed Sack</h2>
+            <p>Price: £12.99</p>
+            <a href="https://www.amazon.co.uk/Scott-Co-NEW-Seed-Box/dp/B01M0TNFUC/ref=sr_1_5?crid=1TDI9XAM3GFNJ&keywords=gardening+seeds&qid=1698676214&sprefix=gardening+seeds%2Caps%2C90&sr=8-5" class="buy-button">Buy Now</a>       
+        </div>
+
+
+
+</section>
+
+<!-- JavaScript for filtering products -->
+<script>
+    // Select all filter buttons and product items
+    const filterButtons = document.querySelectorAll('.filter-button');
+    const productItems = document.querySelectorAll('.product');
+
+    // Add click event listeners to filter buttons
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const category = button.getAttribute('data-category');
+
+            // Loop through product items and show/hide based on the selected category
+            productItems.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
+
+
+ 
+ <section id="becca">
+     <!-- Content for Becca -->
+ </section>
+ 
+ <section id="george">
+     <!-- Content for George -->
+ </section>
+ 
+
+
+
+
+<!-- Footer Section -->
+
+<footer>
+	<div class="container">
+		<div class="row">
+
+               <div class="col-md-12 col-sm-12">
+                    <div class="wow fadeInUp footer-copyright" data-wow-delay="1.8s">
+                         <p>Copyright &copy; 2023 websiteDsigns
+                    
+                    </div>
+               </div>
+			
+		</div>
+	</div>
+</footer>
+
+<!-- SCRIPTS -->
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
