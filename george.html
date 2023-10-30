@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="websiteDSigns">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>George's Lists</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+
+<!-- PRE LOADER -->
+
+<div class="preloader">
+     <div class="spinner">
+          <span class="spinner-rotate"></span>
+     </div>
+</div>
+
+
+<div class="navbar navbar-fixed-top custom-navbar" role="navigation">
+    <div class="container">
+
+         <!-- navbar header -->
+         <div class="navbar-header">
+              <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                   <span class="icon icon-bar"></span>
+                   <span class="icon icon-bar"></span>
+                   <span class="icon icon-bar"></span>
+              </button>
+         </div>
+
+         <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav navbar-right ">
+                   <li><a href="#daniel.html" class="smoothScroll">Daniel</a></li>
+                   <li><a href="#becca.html" class="smoothScroll">Becca</a></li>
+                   <li><a href="#george.html" class="smoothScroll">George</a></li>
+              </ul>
+         </div>
+
+    </div>
+</div>
+
+
+
+<!-- Home Section -->
+
+<section id="home" class="parallax-section">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-6 col-sm-6" style="background-color: #EA4630">
+                    <div class="home-thumb">
+                        <div class="section-title">
+                                        <a href="#filter-section" class="wow fadeInUp smoothScroll" data-wow-delay="0.3s" style="color: white; font-size: 30px;">George's List 2023</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    // Smooth scroll animation function
+                    document.querySelectorAll('a.smoothScroll').forEach(anchor => {
+                        anchor.addEventListener('click', function(e) {
+                            e.preventDefault();
+                
+                            const targetId = this.getAttribute('href').substring(1); // Remove the # symbol
+                            const targetElement = document.getElementById(targetId);
+                
+                            if (targetElement) {
+                                window.scrollTo({
+                                    top: targetElement.offsetTop,
+                                    behavior: 'smooth',
+                                });
+                            }
+                        });
+                    });
+                </script>
+                <script>
+                    document.getElementById("list-dropdown").addEventListener("click", function() {
+                        var select = this;
+                        var chooseOption = select.querySelector('option[value=""][disabled]');
+                
+                        if (chooseOption) {
+                            select.removeChild(chooseOption);
+                        }
+                    });
+                </script>
+                
+                
+
+
+          </div>
+     </div>
+</section>
+
+<div class="container" id="filter-section">
+    <div class="row">
+        <div class="col-md-12">
+            
+            <div class="filter-buttons">
+                <button class="filter-button" data-category="all">All</button>
+                <button class="filter-button" data-category="toys">Toys</button>
+                <button class="filter-button" data-category="clothes">Clothes</button>
+                <button class="filter-button" data-category="games">Games</button>
+                <button class="filter-button" data-category="bath">Bath Time</button>
+                <button class="filter-button" data-category="cuddly">Cuddlys</button>
+                <button class="filter-button" data-category="books">books</button>
+                <button class="filter-button" data-category="outdoors">Outdoors</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section>
+    <!-- Content for George -->
+    <div class="product-list">
+
+        <!--Toys-->
+
+        <div class="product toys">
+            <img src="" alt="Product 1">
+            <h2></h2>
+            <p>Price: £</p>
+            <a href="" class="buy-button">Buy Now</a>
+        </div>
+
+        <!--clothes-->
+
+        <div class="product clothes">
+            <img src="" alt="Product 2">
+            <h2></h2>
+            <p>Price: £</p>
+            <a href="" class="buy-button">Buy Now</a>
+        </div>
+
+        <!--Bath-->
+
+        <div class="product bath">
+            <img src="" alt="Product 2">
+            <h2></h2>
+            <p>Price: £</p>
+            <a href="" class="buy-button">Buy Now</a>
+        </div>
+
+        <!--games-->
+
+        <div class="product games">
+            <img src="" alt="Product 2">
+            <h2></h2>
+            <p>Price: £</p>
+            <a href="" class="buy-button">Buy Now</a>
+        </div>
+
+        <!--cuddlys-->
+
+        <div class="product cuddly">
+            <img src="" alt="Product 2">
+            <h2></h2>
+            <p>Price: £</p>
+            <a href="" class="buy-button">Buy Now</a>
+        </div>
+
+        <!--books-->
+
+        <div class="product books">
+            <img src="" alt="Product 2">
+            <h2></h2>
+            <p>Price: £</p>
+            <a href="" class="buy-button">Buy Now</a>
+        </div>
+        <!--outdoors-->
+
+        <div class="product outdoors">
+            <img src="" alt="Product 2">
+            <h2></h2>
+            <p>Price: £</p>
+            <a href="" class="buy-button">Buy Now</a>
+        </div>
+
+
+
+
+</section>
+
+<!-- JavaScript for filtering products -->
+<script>
+    // Select all filter buttons and product items
+    const filterButtons = document.querySelectorAll('.filter-button');
+    const productItems = document.querySelectorAll('.product');
+
+    // Add click event listeners to filter buttons
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const category = button.getAttribute('data-category');
+
+            // Loop through product items and show/hide based on the selected category
+            productItems.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
+
+
+ 
+ <section id="becca">
+     <!-- Content for Becca -->
+ </section>
+ 
+ <section id="george">
+     <!-- Content for George -->
+ </section>
+ 
+
+
+
+
+<!-- Footer Section -->
+
+<footer>
+	<div class="container">
+		<div class="row">
+
+               <div class="col-md-12 col-sm-12">
+                    <div class="wow fadeInUp footer-copyright" data-wow-delay="1.8s">
+                         <p>Copyright &copy; 2023 websiteDsigns
+                    
+                    </div>
+               </div>
+			
+		</div>
+	</div>
+</footer>
+
+<!-- SCRIPTS -->
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
