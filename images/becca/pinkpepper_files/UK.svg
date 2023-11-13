@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="13" viewBox="0 0 23 13">
+  <defs>
+    <polygon id="34-uk-a" points="0 0 0 13 26 13 26 0"/>
+    <path id="34-uk-c" d="M13,6.5 L26,6.5 L26,13 L13,6.5 Z M13,6.5 L13,13 L0,13 L13,6.5 Z M13,6.5 L0,6.5 L0,0 L13,6.5 Z M13,6.5 L13,0 L26,0 L13,6.5 Z"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(-1.5)">
+    <mask id="34-uk-b" fill="#fff">
+      <use xlink:href="#34-uk-a"/>
+    </mask>
+    <g mask="url(#34-uk-b)">
+      <polygon fill="#012169" fill-rule="nonzero" points="0 0 0 13 26 13 26 0"/>
+      <path fill="#000" fill-rule="nonzero" stroke="#FFF" stroke-width="2.6" d="M0,0 L26,13 M26,0 L0,13"/>
+      <mask id="34-uk-d" fill="#fff">
+        <use xlink:href="#34-uk-c"/>
+      </mask>
+      <path fill="#000" fill-rule="nonzero" stroke="#C8102E" stroke-width="1.733" d="M0,0 L26,13 M26,0 L0,13" mask="url(#34-uk-d)"/>
+      <path fill="#000" fill-rule="nonzero" stroke="#FFF" stroke-width="4.333" d="M13,0 L13,13 M0,6.5 L26,6.5"/>
+      <path fill="#000" fill-rule="nonzero" stroke="#C8102E" stroke-width="2.6" d="M13,0 L13,13 M0,6.5 L26,6.5"/>
+    </g>
+  </g>
+</svg>
