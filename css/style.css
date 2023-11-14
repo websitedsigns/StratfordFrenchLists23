@@ -64,6 +64,11 @@ html,body {
   transition: background-color 0.3s;
 }
 
+.filter-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
 .buy-button:hover {
   background-color: #0056b3;
 }
@@ -80,7 +85,11 @@ html,body {
   }
 }
 
-
+.copyright_section {
+  background: #232B2B;
+  padding: 12px 0;
+  text-align: center;
+}
 
 /*---------------------------------------
     Typography              
